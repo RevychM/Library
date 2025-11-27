@@ -1,0 +1,147 @@
+header{
+    background-color: #9B5DE0;
+    color: white;
+}
+body{
+    text-align: center;
+    background-color: white;
+}
+.main{
+    text-align: center;
+}
+
+#loginBox {
+    border: 2px solid black;
+    background-color: #f8f8f8;
+    width: 300px;
+    margin: 50px auto; /* centers the box horizontally */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+    text-align: left; /* aligns labels and fields neatly */
+}
+
+nav{
+    background-color: white;
+}
+nav .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px; /* adds small space between buttons */
+}
+
+nav a.btn{
+    background-color: #D78FEE;
+    border: none;
+}
+
+/* Adds shadow effect to buttons */
+nav a.btn:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+    background-color: #4E56C0;
+}
+
+/* Shared Hover Effect */
+#viewBooksBtn:hover,
+#checkOutBtn:hover,
+#editBooksBtn:hover,
+#borrowBookBtn:hover,
+#addBooksBtn:hover,
+#removeBooksBtn:hover,
+#chooseCount:hover,
+#returnBooksBtn:hover,
+#borrowBooksBtn:hover,
+#viewCartBtn:hover,
+#adminTrackBooksBtn:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+  background-color: #4E56C0;
+  color: white; /*Text color*/
+}
+
+/* Shared Default Button Style */
+#viewBooksBtn,
+#checkOutBtn,
+#editBooksBtn,
+#borrowBookBtn,
+#addBooksBtn,
+#removeBooksBtn,
+#chooseCount,
+#returnBooksBtn,
+#borrowBooksBtn,
+#viewCartBtn,
+#adminTrackBooksBtn{
+  background-color: #D78FEE;
+  border: none;
+  transition: 0.3s ease;
+}
+#booksTable {
+  display: none;
+}
+
+/* Media queries */
+@media (max-width: 992px) {
+    header {
+        font-size: 1.6rem;
+        padding: 15px;
+    }
+
+    nav .container {
+        justify-content: center;
+    }
+
+    #loginBox {
+        width: 350px;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        font-size: 1.4rem;
+        padding: 12px;
+        text-align: center;
+    }
+
+    nav .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    nav a.btn {
+        width: 80%;
+        text-align: center;
+    }
+
+    #loginBox {
+        width: 280px;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    body {
+        font-size: 0.9rem;
+    }
+
+    nav .container {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    nav a.btn {
+        width: 90%;
+        padding: 10px;
+    }
+
+    #loginBox {
+        width: 250px;
+        padding: 15px;
+    }
+}
